@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio</title>
+
+        <link rel="icon" type="images/logo2" href="images/logo2.png">
+
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/a2f683192e.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+<div id="header"> 
+    <div class="container">
+        <nav>
+            <img src="images/logo2.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <!-- <li><a href="#servicess">Services</a></li> -->
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-ellipsis-vertical" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Hashir <span>Khan</span></h1>
+            <p>Data Analyst</p>
+            <p class="skills-line">SQL • Python • Tableau</p>
+        </div>
+    </div>
+</div>
+<!------------about---------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1"><img src="images/me.jpg"></div>
+            <div class="about-col-2"><h1 class="sub-title">About Me</h1>
+            <p>Analytical and detail-oriented Computer Science postgraduate student pursuing an M.Tech in Computer
+Science Engineering, with a B.Tech in Artificial Intelligence and Data Science and hands-on experience in
+data analytics, machine learning, and data visualization. Proficient in Python, SQL, Excel, and Tableau, with
+practical experience in predictive modeling, natural language processing, time-series analysis, and
+dashboard development.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Languages</span><br>Python, SQL, HTML, CSS, JavaScript</li>
+                        <li><span>Tools</span><br>Microsoft Excel, Tableau, Scikit-Learn, VS
+Code, Jupyter Notebook and MySQL Workbench <br></li>
+                        <li><span>Technical Data Skills</span><br>Data Cleaning & Preprocessing, Data Visualization, Data Extraction and Transformation, Feature Engineering, Machine Learning, NLP,
+Statistical Analysis, SQL Queries and Dashboarding</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2026-Present</span><br>Mtech in Computer Science Engineering</li>
+                        <li><span>2023-2026</span><br>Btech in Artificial Intelligence and Data Science Engineering</li>
+                        <li><span>2020-2023</span><br>Diploma in Electrical and Electronics Engineering</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>March 2025 – August 2025</span><br>Data Analyst Intern</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------Services------------>
+<!-- <div id="servicess">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="servicess-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Data Cleaning</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ratione deserunt totam fugit voluptatum dolorem nisi commodi 
+                    doloremque! Voluptas tempore blanditiis dolorum numquam facilis nobis earum, assumenda tempora suscipit qui!</p>
+                    <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-magnifying-glass-chart"></i>
+                <h2>EDA</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ratione deserunt totam fugit voluptatum dolorem nisi commodi 
+                    doloremque! Voluptas tempore blanditiis dolorum numquam facilis nobis earum, assumenda tempora suscipit qui!</p>
+                    <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-robot"></i>
+                <h2>Building Models</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ratione deserunt totam fugit voluptatum dolorem nisi commodi 
+                    doloremque! Voluptas tempore blanditiis dolorum numquam facilis nobis earum, assumenda tempora suscipit qui!</p>
+                    <a href="#">Learn more</a>
+            </div>
+        </div>
+
+    </div> 
+
+</div> -->
+<!-----------My Work---------------->
+<div id="projects"> 
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/2.jpg">
+                <div class="layer">
+                    <h2>20 Machine learning Projects</h2>
+                    <p><strong>Tools:</strong> Python, Pandas, Scikit-learn, Tensorflow, Keras, Jupyter Notebook</p>
+                    <p><br>Predictive Models and Deep learning Solutions for Real-World Problems. 
+                    </p>
+                    <a href="https://github.com/Beinghash/20-Machine-Learning-Projects-"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>                        
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/1.jpg">
+                <div class="layer">
+                    <h2>Sentiment Analysis Using Twitter Data</h2>
+                    <p><strong>Tools:</strong> Python, NLP, Scikit-learn, Flask</p>
+                    <p><br>An end-to-end NLP pipeline that transform raw tweets into meaningful sentiment insights.</p>
+                    <a href="https://github.com/Beinghash/Sentiment-Analysis-Using-Twitter-Data"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/4.jpg">
+                <div class="layer">
+                    <h2>Coffee Shop Sales Analysis</h2>
+                    <p><strong>Tools:</strong> Python, MySQL, Scikit-learn, Matplotlib, Seaborn</p>
+                    <p><br>Analyzing Sales trends and Customer behaviour using Python and SQL.</p>
+                    <a href="https://github.com/Beinghash/Coffee-Sales-Analysis"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>                        
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/5.jpg">
+                <div class="layer">
+                    <h2>YT360 Tableau Dashboard</h2>
+                    <p><strong>Tools:</strong> Tableau</p>
+                    <p><br>Analyzed Youtube performance data to identify key revenue drivers and optimize content performance through interactive dashboards and predictive modeling.</p>
+                    <a href="https://public.tableau.com/app/profile/hashir.khan1870/viz/YT360_YouTube_Performance_Dashboard/Dashboard"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>                  
+                    </div>
+            </div>
+        </div>
+        <a href="https://github.com/Beinghash?tab=repositories" class="btn">See More</a>
+    </div>
+</div>
+<!--------------------contact---------------->
+<div id="contact" class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p class="contact-email">
+                    <i class="fa-regular fa-envelope"></i>beinghash5@gmail.com</p>                
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/hashir-khan-4a45b027b/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Beinghash"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/Resume.pdf" download class="btn btn2">Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="Contact-Form">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>    
+</div>
+
+<script>
+    
+    var tablinks = document.getElementsByClassName('tab-links');
+    var tabcontents = document.getElementsByClassName('tab-contents');
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+   var sidemenu = document.getElementById('sidemenu');
+
+   function openmenu(){
+     sidemenu.style.right = "0";
+   }
+   function closemenu(){
+    sidemenu.style.right = "-200px";
+   }
+
+</script>
+
+
+<script>
+	const scriptURL = 'https://script.google.com/macros/s/AKfycbx6k-1OOsOWMkX-uPYzgz8GurZOX0bXREO8dSGLV4bF6XEcT0ebiLnUCnHaUoQNnqzZTA/exec';
+	const form = document.forms['Contact-Form'];
+    const msg = document.getElementById('msg');
+
+	form.addEventListener('submit', e => {
+		e.preventDefault();
+
+		fetch(scriptURL, { 
+            method: 'POST', 
+            body: new FormData(form) 
+        })
+		.then(response => response.text())
+		.then(response => {
+            msg.innerHTML = "Message Sent Successfully";
+            setTimeout(function(){
+                    msg.innerHTML = "";
+                }, 5000);
+
+                form.reset();
+            })
+			.catch(error => { 
+                console.error('Error!', error.message);
+                msg.innerHTML = 'Something went wrong!'
+            });
+    });
+</script>
+
+<footer class="footer"></footer>
+
+</body>    
+</html>
