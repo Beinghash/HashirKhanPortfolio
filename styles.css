@@ -474,6 +474,10 @@ nav .fa-xmark, nav .fa-ellipsis-vertical{
     .contact-left, .contact-right{
         flex-basis: 100%;
     }
+    /* Mobile Footer  */
+    .footer {
+        background: #f3d783;
+    }
 }
 #msg{
     color: green;
@@ -482,10 +486,10 @@ nav .fa-xmark, nav .fa-ellipsis-vertical{
     display: block;
     font-size: 19px;
 }
-/* Footer  */
-.footer{
+/* Desktop Footer  */
+.footer {
     width: 100%;
-    background: #f3d783;
+    background: #f7ca44;
     padding: 20px 0;
     text-align: center;
     margin-top: 30px;
